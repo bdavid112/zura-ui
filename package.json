@@ -1,0 +1,12 @@
+{
+  "name": "zura-ui",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Zura UI - custom component library",
+  "scripts": {
+    "dev": "pnpm -r dev",
+    "build": "pnpm -r build"
+  },
+  "license": "MIT",
+  "packageManager": "pnpm@10.6.5"
+}
