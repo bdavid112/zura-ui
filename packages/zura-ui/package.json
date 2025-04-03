@@ -2,7 +2,7 @@
   "name": "@dboros122/zura-ui",
   "version": "0.1.0",
   "description": "Zura UI – Custom React + Tailwind component library",
-  "author": "David Boros dboros122@gmail.com",
+  "author": "David Boros <dboros122@gmail.com>",
   "license": "MIT",
   "keywords": [
     "react",
@@ -19,11 +19,18 @@
   "files": [
     "dist"
   ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsup src/index.ts --format esm,cjs --dts",
     "clean": "rm -rf dist",
-    "test": "echo \"No tests yet!\""
+    "generate-theme": "ts-node scripts/generateThemeCss.ts"
   },
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0",
@@ -32,19 +39,20 @@
   "dependencies": {
     "classnames": "^2.3.2"
   },
-  "packageManager": "pnpm@10.6.5",
   "devDependencies": {
     "@tailwindcss/vite": "^4.0.16",
+    "@types/node": "^22.13.17",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.21",
+    "clsx": "^2.1.1",
     "postcss": "^8.5.3",
-    "sass": "^1.86.0",
-    "sass-embedded": "^1.86.0",
+    "prettier": "^3.5.3",
     "tailwindcss": "^4.0.16",
     "tsup": "^8.4.0",
     "typescript": "^5",
     "vite": "^6.2.3"
-  }
+  },
+  "packageManager": "pnpm@10.6.5"
 }

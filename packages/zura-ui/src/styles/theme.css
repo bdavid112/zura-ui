@@ -1,0 +1,123 @@
+@theme {
+  /* === Typograhpy === */
+
+  --default-font-family: 'Plus Jakarta Sans', sans-serif;
+
+  --text-caption: 0.75rem;
+  --leading-caption: 1rem;
+
+  --text-label: 0.875rem;
+  --leading-label: 1.25rem;
+
+  --text-button: 0.875rem;
+  --leading-button: 1.25rem;
+
+  --text-sm: 0.875rem;
+  --leading-sm: 1.25rem;
+
+  --text-base: 1rem;
+  --leading-base: 1.5rem;
+
+  --text-h6: 1.125rem;
+  --leading-h6: 1.5rem;
+
+  --text-h5: 1.25rem;
+  --leading-h5: 1.75rem;
+
+  --text-h4: 1.5rem;
+  --leading-h4: 2rem;
+
+  --text-h3: 1.875rem;
+  --leading-h3: 2.25rem;
+
+  --text-h2: 2.25rem;
+  --leading-h2: 2.5rem;
+
+  --text-h1: 3rem;
+  --leading-h1: 1;
+
+  --text-displaySm: 3.75rem;
+  --leading-displaySm: 1;
+
+  --text-displayMd: 4.5rem;
+  --leading-displayMd: 1;
+
+  --text-displayLg: 6rem;
+  --leading-displayLg: 1;
+
+  /* === Colors - Light Theme === */
+
+  /* Background color */
+  --background: var(--color-gray-50);
+
+  /* Text colors (foreground) */
+  --text-primary: var(--color-gray-900);
+  --text-secondary: var(--color-gray-600);
+  --text-muted: var(--color-gray-500);
+  --text-disabled: var(--color-gray-400);
+  --text-inverted: var(--color-gray-50);
+
+  /* Surface colors */
+  --surface-10: var(--color-gray-100);
+  --surface-100: var(--color-gray-200);
+  --surface-1000: var(--color-gray-300);
+
+  /* Border colors */
+  --border-primary: var(--color-gray-400);
+  --border-muted: var(--color-gray-300);
+  --border-disabled: var(--color-gray-200);
+
+  /* Primary brand color */
+  --primary-base-sm: var(--color-cyan-500);
+  --primary-base-lg: var(--color-cyan-600);
+  --primary-disabled-sm: var(--color-cyan-300);
+  --primary-disabled-lg: var(--color-cyan-200);
+  --primary-hover-sm: var(--color-cyan-600);
+  --primary-hover-lg: var(--color-cyan-500);
+  --primary-active: var(--color-cyan-700);
+
+  /* State colors */
+  --state-info: var(--color-blue-500);
+  --state-success: var(--color-green-600);
+  --state-warning: var(--color-amber-500);
+  --state-error: var(--color-red-600);
+}
+
+/* === Colors - Dark Theme === */
+
+[data-theme='dark'] {
+  /* Background color */
+  --background: var(--color-zinc-900);
+
+  /* Text colors (foreground) */
+  --text-primary: var(--color-gray-50);
+  --text-secondary: var(--color-gray-300);
+  --text-muted: var(--color-gray-400);
+  --text-disabled: var(--color-gray-500);
+  --text-inverted: var(--color-gray-900);
+
+  /* Surface colors */
+  --surface-10: var(--color-zinc-800);
+  --surface-100: var(--color-zinc-700);
+  --surface-1000: var(--color-zinc-600);
+
+  /* Border colors */
+  --border-primary: var(--color-gray-400);
+  --border-muted: var(--color-gray-500);
+  --border-disabled: var(--color-gray-600);
+
+  /* Primary brand color */
+  --primary-base-sm: var(--color-cyan-400);
+  --primary-base-lg: var(--color-cyan-700);
+  --primary-disabled-sm: var(--color-cyan-700);
+  --primary-disabled-lg: var(--color-cyan-800);
+  --primary-hover-sm: var(--color-cyan-300);
+  --primary-hover-lg: var(--color-cyan-600);
+  --primary-active: var(--color-cyan-500);
+
+  /* State colors */
+  --state-info: var(--color-blue-300);
+  --state-success: var(--color-green-400);
+  --state-warning: var(--color-amber-300);
+  --state-error: var(--color-red-400);
+}

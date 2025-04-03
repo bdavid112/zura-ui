@@ -1,0 +1,93 @@
+@layer components {
+  /* === Variants === */
+
+  /* Base styling */
+
+  .zui-button {
+    @apply bg-inherit text-[color:var(--text-primary)] text-sm leading-sm tracking-wider font-medium cursor-pointer transition-all duration-75 outline-none;
+  }
+  .zui-button:focus-visible {
+    @apply ring-2 ring-[var(--primary-base-sm)] ring-offset-2;
+  }
+
+  .zui-button--primary {
+    @apply bg-[var(--primary-base-lg)];
+  }
+
+  .zui-button--secondary {
+    @apply border border-[var(--border-muted)];
+  }
+
+  /* Styles for states */
+
+  .zui-button:where([disabled]) {
+    @apply cursor-not-allowed text-[color:var(--text-disabled)];
+  }
+
+  .zui-button--primary:not([disabled]) {
+    @apply hover:bg-[var(--primary-hover-lg)] active:bg-[var(--primary-active)] shadow-sm hover:shadow-md active:shadow-none active:inset-shadow-sm;
+  }
+  .zui-button--primary:where([disabled]) {
+    @apply bg-[var(--primary-disabled-lg)];
+  }
+
+  .zui-button--secondary:not([disabled]) {
+    @apply hover:bg-[var(--surface-10)] active:bg-[var(--surface-100)];
+  }
+  .zui-button--secondary:where([disabled]) {
+    @apply border-[var(--border-disabled)];
+  }
+
+  .zui-button--ghost:not([disabled]) {
+    @apply hover:bg-[var(--surface-10)] active:bg-[var(--surface-100)];
+  }
+
+  /* === Size === */
+
+  .zui-button--sm {
+    @apply h-8 px-3 py-1;
+  }
+
+  .zui-button--md {
+    @apply h-10 px-4 py-1;
+  }
+
+  .zui-button--lg {
+    @apply h-12 px-5 py-1;
+  }
+
+  /* === Shape === */
+
+  .zui-button--rectangle {
+    @apply rounded-sm;
+  }
+
+  .zui-button--pill {
+    @apply rounded-full;
+  }
+}
+
+/* === Theme related styling === */
+
+:root, /* Fallback */
+[data-theme='light'] {
+  .zui-button--primary {
+    @apply text-[color:var(--text-inverted)];
+  }
+  .zui-button--primary:where([disabled]) {
+    @apply text-[color:var(--text-disabled)];
+  }
+}
+
+[data-theme='dark'] {
+  .zui-button--primary:where([disabled]) {
+    @apply text-[color:var(--text-muted)];
+  }
+
+  .zui-button--secondary {
+    @apply border-none bg-[var(--surface-10)];
+  }
+  .zui-button--secondary:not([disabled]) {
+    @apply hover:bg-[var(--surface-100)] active:bg-[var(--surface-1000)];
+  }
+}
