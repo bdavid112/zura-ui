@@ -48,76 +48,81 @@
   /* === Colors - Light Theme === */
 
   /* Background color */
-  --background: var(--color-gray-50);
+  --zui-background: var(--color-gray-50);
 
   /* Text colors (foreground) */
-  --text-primary: var(--color-gray-900);
-  --text-secondary: var(--color-gray-600);
-  --text-muted: var(--color-gray-500);
-  --text-disabled: var(--color-gray-400);
-  --text-inverted: var(--color-gray-50);
+  --zui-text-primary: var(--color-gray-900);
+  --zui-text-secondary: var(--color-gray-600);
+  --zui-text-muted: var(--color-gray-500);
+  --zui-text-disabled: var(--color-gray-400);
+  --zui-text-inverted: var(--color-gray-50);
 
   /* Surface colors */
-  --surface-10: var(--color-gray-100);
-  --surface-100: var(--color-gray-200);
-  --surface-1000: var(--color-gray-300);
+  --zui-surface-10: var(--color-gray-100);
+  --zui-surface-100: var(--color-gray-200);
+  --zui-surface-1000: var(--color-gray-300);
 
   /* Border colors */
-  --border-primary: var(--color-gray-400);
-  --border-muted: var(--color-gray-300);
-  --border-disabled: var(--color-gray-200);
+  --zui-border-primary: var(--color-gray-400);
+  --zui-border-muted: var(--color-gray-300);
+  --zui-border-disabled: var(--color-gray-200);
 
   /* Primary brand color */
-  --primary-base-sm: var(--color-cyan-500);
-  --primary-base-lg: var(--color-cyan-600);
-  --primary-disabled-sm: var(--color-cyan-300);
-  --primary-disabled-lg: var(--color-cyan-200);
-  --primary-hover-sm: var(--color-cyan-600);
-  --primary-hover-lg: var(--color-cyan-500);
-  --primary-active: var(--color-cyan-700);
+  --zui-primary-base-sm: var(--color-cyan-500);
+  --zui-primary-base-lg: var(--color-cyan-600);
+  --zui-primary-disabled-sm: var(--color-cyan-300);
+  --zui-primary-disabled-lg: var(--color-cyan-200);
+  --zui-primary-hover-sm: var(--color-cyan-600);
+  --zui-primary-hover-lg: var(--color-cyan-500);
+  --zui-primary-active: var(--color-cyan-700);
 
   /* State colors */
-  --state-info: var(--color-blue-500);
-  --state-success: var(--color-green-600);
-  --state-warning: var(--color-amber-500);
-  --state-error: var(--color-red-600);
+  --zui-state-info: var(--color-blue-500);
+  --zui-state-success: var(--color-green-600);
+  --zui-state-warning: var(--color-amber-500);
+  --zui-state-error: var(--color-red-600);
+
+  /* === Animations === */
+
+  --zui-fade-in: zui-fade-in 0.6s ease-out both;
+  --zui-animated-gradient: linear-gradient(270deg, #d946ef, #8b5cf6, #0ea5e9);
 }
 
 /* === Colors - Dark Theme === */
 
 [data-theme='dark'] {
   /* Background color */
-  --background: var(--color-zinc-900);
+  --zui-background: var(--color-zinc-900);
 
   /* Text colors (foreground) */
-  --text-primary: var(--color-gray-50);
-  --text-secondary: var(--color-gray-300);
-  --text-muted: var(--color-gray-400);
-  --text-disabled: var(--color-gray-500);
-  --text-inverted: var(--color-gray-900);
+  --zui-text-primary: var(--color-gray-50);
+  --zui-text-secondary: var(--color-gray-300);
+  --zui-text-muted: var(--color-gray-400);
+  --zui-text-disabled: var(--color-gray-500);
+  --zui-text-inverted: var(--color-gray-900);
 
   /* Surface colors */
-  --surface-10: var(--color-zinc-800);
-  --surface-100: var(--color-zinc-700);
-  --surface-1000: var(--color-zinc-600);
+  --zui-surface-10: var(--color-zinc-800);
+  --zui-surface-100: var(--color-zinc-700);
+  --zui-surface-1000: var(--color-zinc-600);
 
   /* Border colors */
-  --border-primary: var(--color-gray-400);
-  --border-muted: var(--color-gray-500);
-  --border-disabled: var(--color-gray-600);
+  --zui-border-primary: var(--color-gray-400);
+  --zui-border-muted: var(--color-gray-500);
+  --zui-border-disabled: var(--color-gray-600);
 
   /* Primary brand color */
-  --primary-base-sm: var(--color-cyan-400);
-  --primary-base-lg: var(--color-cyan-700);
-  --primary-disabled-sm: var(--color-cyan-700);
-  --primary-disabled-lg: var(--color-cyan-800);
-  --primary-hover-sm: var(--color-cyan-300);
-  --primary-hover-lg: var(--color-cyan-600);
-  --primary-active: var(--color-cyan-500);
+  --zui-primary-base-sm: var(--color-cyan-400);
+  --zui-primary-base-lg: var(--color-cyan-700);
+  --zui-primary-disabled-sm: var(--color-cyan-700);
+  --zui-primary-disabled-lg: var(--color-cyan-800);
+  --zui-primary-hover-sm: var(--color-cyan-300);
+  --zui-primary-hover-lg: var(--color-cyan-600);
+  --zui-primary-active: var(--color-cyan-500);
 
   /* State colors */
-  --state-info: var(--color-blue-300);
-  --state-success: var(--color-green-400);
-  --state-warning: var(--color-amber-300);
-  --state-error: var(--color-red-400);
+  --zui-state-info: var(--color-blue-300);
+  --zui-state-success: var(--color-green-400);
+  --zui-state-warning: var(--color-amber-300);
+  --zui-state-error: var(--color-red-400);
 }

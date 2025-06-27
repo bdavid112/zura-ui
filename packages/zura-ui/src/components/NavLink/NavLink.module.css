@@ -1,0 +1,16 @@
+@layer components {
+  /* === Variants === */
+
+  /* Base styling */
+  .zui-navlink {
+    @apply inline-flex rounded-sm items-center gap-2 p-1 text-sm outline-none transition-all duration-75 cursor-pointer text-[color:var(--zui-text-muted)] hover:text-[color:var(--zui-text-secondary)];
+  }
+  .zui-navlink:focus-visible {
+    @apply ring-2 ring-[var(--zui-primary-base-sm)] ring-offset-2;
+  }
+
+  /* Styles for states */
+  .zui-navlink--active {
+    @apply text-[color:var(--zui-text-primary)];
+  }
+}

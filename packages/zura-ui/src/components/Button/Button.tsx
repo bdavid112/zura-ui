@@ -8,9 +8,13 @@ export function Button({
   shape = 'rectangle',
   disabled,
   children,
+  icon,
+  iconPosition = 'left',
   className,
   ...props
 }: ButtonProps) {
+  const isIconOnly = !!icon && !children
+
   return (
     <button
       className={clsx(
@@ -18,12 +22,19 @@ export function Button({
         `zui-button--${variant}`,
         `zui-button--${size}`,
         `zui-button--${shape}`,
+        { 'zui-button--icon-only': isIconOnly },
         className
       )}
       disabled={disabled}
       {...props}
     >
+      {icon && iconPosition === 'left' && (
+        <span className="zui-button__icon">{icon}</span>
+      )}
       {children}
+      {icon && iconPosition === 'right' && (
+        <span className="zui-button__icon">{icon}</span>
+      )}
     </button>
   )
 }

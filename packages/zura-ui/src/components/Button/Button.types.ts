@@ -8,5 +8,7 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant
   size?: ButtonSize
   shape?: ButtonShape
-  children: ReactNode
+  children?: ReactNode
+  icon?: React.ReactNode
+  iconPosition?: 'left' | 'right'
 }
