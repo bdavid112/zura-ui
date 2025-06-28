@@ -1,12 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Button } from '@/components/Button'
-import { NavLink } from '@/components/NavLink'
-import { MdLightMode, MdDarkMode } from 'react-icons/md'
 
 export const Main = () => {
   return (
     <div className="container p-16 m-auto">
-      <section className="max-w-4xl mx-auto px-6 py-24 text-center space-y-10 font-[var(--default-font-family)]">
+      <section className="max-w-4xl mx-auto px-6 text-center space-y-10 font-[var(--default-font-family)]">
         {/* Title + Subtitle */}
         <div className="space-y-2">
           <div className="overflow-visible">
@@ -49,11 +47,10 @@ export const Main = () => {
         </div>
       </section>
 
-      <div className="flex items-center justify-center gap-4 mt-8">
+      <div className="flex items-center justify-center gap-4 mt-8 zui-animate-fade-in zui-delay-600">
         {/* Action Button */}
-        <Button variant="secondary" size="md" shape="rectangle">
-          Explore Components
-        </Button>
+        <Button>Get Zura</Button>
+        <Button variant="secondary">Explore Components</Button>
       </div>
     </div>
   )
