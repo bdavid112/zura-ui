@@ -1,5 +1,7 @@
 import React from 'react'
 import { Button } from '@/components/Button'
+import { Tab } from '@/components/Tab/Tab'
+import { Tabs } from '@/components/Tabs'
 
 export const Main = () => {
   return (
@@ -51,6 +53,14 @@ export const Main = () => {
         {/* Action Button */}
         <Button>Get Zura</Button>
         <Button variant="secondary">Explore Components</Button>
+      </div>
+
+      <div className="flex gap-4">
+        <Tabs variant="outlined" orientation="horizontal">
+          <Tab label="Active" active={true}></Tab>
+          <Tab label="Inactive"></Tab>
+          <Tab label="Inactive"></Tab>
+        </Tabs>
       </div>
     </div>
   )

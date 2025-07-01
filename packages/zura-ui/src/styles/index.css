@@ -2,6 +2,8 @@
 @import '../styles/theme.css';
 @import '../components/Button/Button.module.css';
 @import '../components/NavLink/NavLink.module.css';
+@import '../components/Tab/Tab.module.css';
+@import '../components/Tabs/Tabs.module.css';
 
 @layer components {
   body {

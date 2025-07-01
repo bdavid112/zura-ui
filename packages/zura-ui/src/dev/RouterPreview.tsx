@@ -1,9 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { NavLink } from '@/components/NavLink'
 import React, { useEffect, useState } from 'react'
-import { Main } from '@/Main'
+import { Main } from '@/pages/Main'
 import { Button } from '@/components/Button'
 import { MdDarkMode, MdLightMode } from 'react-icons/md'
+import { ButtonPage } from '@/pages/ButtonPage'
+import { ComponentsPage } from '@/pages/ComponentsPage'
+import { NavLinkPage } from '@/pages/NavLinkPage'
 
 export function RouterPreview() {
   const [theme, setTheme] = useState(
@@ -43,7 +46,9 @@ export function RouterPreview() {
       <main className="p-6">
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/components" element={<p>Components page</p>} />
+          <Route path="/components" element={<ComponentsPage />} />
+          <Route path="/components/button" element={<ButtonPage />} />
+          <Route path="/components/navlink" element={<NavLinkPage />} />
           <Route path="/docs" element={<p>Docs page</p>} />
         </Routes>
       </main>
