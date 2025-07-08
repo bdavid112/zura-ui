@@ -50,19 +50,6 @@ Its main goal is to:
 
 ---
 
-## 📁 Project Structure (Simplified)
-
-apps/ # Demo apps or docs (planned)
-packages/
-└── zura-ui/ # Component source code
-└── src/
-└── components/
-└── hooks/
-└── utils/
-└── index.ts
-
----
-
 ## 📌 Status
 
 🧪 Work in progress – basic components functional  
